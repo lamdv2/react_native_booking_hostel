@@ -17,7 +17,7 @@ const LoginScreen = () => {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
-          placeholder="Tên Đăng Nhập"
+          placeholder="UserName"
           placeholderTextColor="#777"
           value={username}
           onChangeText={setUsername}
@@ -26,7 +26,7 @@ const LoginScreen = () => {
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
-          placeholder="Mật Khẩu"
+          placeholder="Password"
           placeholderTextColor="#777"
           secureTextEntry
           value={password}
@@ -34,7 +34,7 @@ const LoginScreen = () => {
         />
       </View>
       <View style={styles.sizebox}></View>
-      <Button title="Đăng Nhập" onPress={handleLogin} />
+      <Button title="Login" onPress={handleLogin} />
     </View>
   );
 };
